@@ -1,0 +1,21 @@
+params = dict()
+params['num_classes'] = 2
+params['dataset'] = '../../data/data_TPS'
+params['epoch_num'] = 10
+params['batch_size'] = 16
+params['step'] = 50
+params['num_workers'] = 8
+params['learning_rate'] = 3e-3
+params['momentum'] = 0.9
+#probar 1e-4
+params['weight_decay'] = 1e-5
+params['display'] = 1
+#partir de cero
+#params['pretrained'] = None
+#entrenado 10 epocas
+params['pretrained'] = '/home/cctvalsecond/smoke_project/codes/SlowFastNetworks_train2actions/UCF101/2019-12-06-12-19-46/clip_len_64frame_sample_rate_1_checkpoint_8.pth.tar'
+params['gpu'] = [0]
+params['log'] = 'log'
+params['save_path'] = 'UCF101'
+params['clip_len'] = 64
+params['frame_sample_rate'] = 1
